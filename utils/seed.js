@@ -33,7 +33,6 @@ db.once('open', async () => {
         users.push({
             username,
             email,
-            thoughts
         });
     }
 
