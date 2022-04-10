@@ -1,18 +1,20 @@
+require('dotenv').config();
 const express = require('express');
-const db = require('./config/connection');
-const routes = require('./routes');
-
-const cwd = process.cwd();
-
-const PORT = 3001;
 const app = express();
+const mongoose = require('mongoose');
+const PORT = 3001;
+const routes = require('./controllers');
 
-app.use(express.urlencoded({ extended: true }));
+mongoose.connect(process.env.db, { useNewUrlParser: true, useUnifiedTopology: true });
+const db = mongoose.connection;
+
+db.on('error', (err) => console.error(err));
+db.once('open', () => console.log('Connected to database'));
+
 app.use(express.json());
+
 app.use(routes);
 
-db.once('open', () => {
-    app.listen(PORT, () => {
-        console.log(`API server for ${activity} running on port ${PORT}!`);
-    });
-});
+
+
+app.listen(PORT, () => console.log("Server is running...."));
