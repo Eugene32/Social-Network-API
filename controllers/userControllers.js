@@ -92,7 +92,7 @@ module.exports = {
                     res.status(404).json({ message: 'No user found!' });
                     return;
                 }
-                res.json(user);
+                res.status(201).json(user);
             })
             .catch(err => res.json({ message: err.message }));
     },
