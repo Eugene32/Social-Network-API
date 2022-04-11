@@ -42,30 +42,9 @@ db.once('open', async () => {
     // Add users to the collection and await the results
     await User.collection.insertMany(users);
 
-
-
-    // const thoughts = [];
-
-    // for (let i = 0; i < 5; i++) {
-
-    //     const thought = getRandomThoughts();
-
-    //     thoughts.push({
-    //         thought
-    //     });
-    // }
-
-    // await Thought.collection.insertMany(thoughts);
-
-    // // Add courses to the collection and await the results
-    // //   await Thought.collection.insertOne({
-    // //     userId: [...users],
-    // //     thoughts: [...thoughts]
-    // //   });
-
     // Log out the seed data to indicate what should appear in the database
      console.table(users);
-    ///console.table(thoughts);
+
      console.info('Seeding complete! 🌱');
     process.exit(0);
 });
