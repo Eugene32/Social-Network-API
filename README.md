@@ -60,11 +60,12 @@ This is an REST API for a social network that uses a NoSQL database (MongoDB) im
 
 ![alt text][logo]
 
-[logo]: Assets/demo/demo-01.gif "E-commerce Back-End demo"
+[logo]: assets/images/demo/demo1.png "REST API demo"
 
-- Video link:  [Video: Category](https://drive.google.com/file/d/1q4l_tl_GvmR4kw3qaUc51PIPfPwQayCi/view)
-- Video link:  [Video: Product](https://drive.google.com/file/d/1hqTTsaCguHt-DdhI8Zmisv2IqU8w9AHK/view)
-- Video link:  [Video: Tags](https://drive.google.com/file/d/1c40iXHZ45Kkj3sPKb_8WqrphgNUqic63/view)
+- Video link:  [Video: Users](https://drive.google.com/file/d/1v-e1Yybqx7KxnCljpmiPk92psB3gJTKs/view)
+- Video link:  [Video: Friends](https://drive.google.com/file/d/1SpbD6gGUeYRxAzIaKNynVO3HT7IibjfW/view)
+- Video link:  [Video: Thoughts](https://drive.google.com/file/d/1Rg8M0uI_wsASL09xhYZns_hA1pBy_oiv/view)
+- Video link:  [Video: Comments](https://drive.google.com/file/d/1Li9IflAyNNidwE8yE8xGHOkM78Kcklns/view)
 
 ### Questions: 
 
