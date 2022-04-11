@@ -23,7 +23,7 @@ This is an REST API for a social network that uses a NoSQL database (MongoDB) im
 * [Questions](#questions)
 * [License](#license)
 
-### Installation:    
+## Installation:    
 - Clone or fork the repository.
 
 			`git@github.com:Eugene32/Social-Network-API.git`
@@ -46,37 +46,37 @@ This is an REST API for a social network that uses a NoSQL database (MongoDB) im
      			`.env`
 
 
-### Usage:  
+## Usage:  
 - Can be used for any device.
 
-### Contributing:  
+## Contributing:  
 - None
 
-### Tests:  
+## Tests:  
 - No testing modules had been made for this application
 
-### Demo:  
+## Demo:  
 - Demo page: 
 
 ![alt text][logo]
 
 [logo]: assets/images/demo/demo1.png "REST API demo"
 
-## Videos:
+### Videos:
 
 - Video link:  [Video: Users](https://drive.google.com/file/d/1v-e1Yybqx7KxnCljpmiPk92psB3gJTKs/view)
 - Video link:  [Video: Friends](https://drive.google.com/file/d/1SpbD6gGUeYRxAzIaKNynVO3HT7IibjfW/view)
 - Video link:  [Video: Thoughts](https://drive.google.com/file/d/1Rg8M0uI_wsASL09xhYZns_hA1pBy_oiv/view)
 - Video link:  [Video: Comments](https://drive.google.com/file/d/1Li9IflAyNNidwE8yE8xGHOkM78Kcklns/view)
 
-### Questions: 
+## Questions: 
 
 Github:  [eugene32](https://github.com/eugene32)
 
 Email:   [ekahiyang@gmail.com](mailto:ekahiyang@gmail.com)
 
 
-### License:  
+## License:  
 The MIT License
 
 	Permission is hereby granted, free of charge, to any person obtaining a 
