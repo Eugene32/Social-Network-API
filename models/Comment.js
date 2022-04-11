@@ -9,10 +9,10 @@ const commentSchema = new Schema(
         },
         commentBody: {
             type: String,
-            required: [true, 'Please enter your message.'],
+            required: [true, 'Please enter your comment.'],
             trim: true,
             minlength: 1,
-            maxlength: 280
+            maxlength: 360
         },
         username: {
             type: String,
@@ -20,7 +20,7 @@ const commentSchema = new Schema(
         },
         createdAt: {
             type: String,
-            default: Date("<YYYY-mm-dd HH:MM:ss>")
+            default: Date("<YYYY-mm-dd HH:MM:ss>")  // Displays UTC date as per format and timezone of user
         },
     },
     {

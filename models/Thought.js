@@ -9,7 +9,7 @@ const thoughtSchema = new Schema(
             type: String,
             required: [true, 'Missing input.'],
             minlength: 1,
-            maxlength: 280
+            maxlength: 360
         },
         createdAt: {
             type: String,
