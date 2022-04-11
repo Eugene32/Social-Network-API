@@ -4,7 +4,7 @@
 Social Network API using MongoDB
 
 ### Description:  
-This is an REST API for a social network that uses a NoSQL database (MongoDB) implement via Mongoose ODM to create a schema.  MongoDB is the best choices for such social application in order to accomodate large amount of data as well as its flexibility.
+This is an REST API for a social network that uses a NoSQL database (MongoDB) implemented via Mongoose ODM to create a schema.  MongoDB is one of the best choices for such social application in order to accomodate large amount of data as well as its flexibility.
 
 ### Technologies:
 - Node Express.js
@@ -24,12 +24,13 @@ This is an REST API for a social network that uses a NoSQL database (MongoDB) im
 * [License](#license)
 
 ### Installation:    
-- Fork or copy the whole directory.
+- Clone or fork the repository.
 
+`git@github.com:Eugene32/Social-Network-API.git`
 
 - Under console, command prompt, or terminal, change to directory where server.js is located. Type or copy the code below
 
-'npm i'.
+'npm i'
 
 - Create .env file on the root directory (where server.js is located).
     - The file must contain the following:
