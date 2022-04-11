@@ -62,6 +62,8 @@ This is an REST API for a social network that uses a NoSQL database (MongoDB) im
 
 [logo]: assets/images/demo/demo1.png "REST API demo"
 
+## Videos:
+
 - Video link:  [Video: Users](https://drive.google.com/file/d/1v-e1Yybqx7KxnCljpmiPk92psB3gJTKs/view)
 - Video link:  [Video: Friends](https://drive.google.com/file/d/1SpbD6gGUeYRxAzIaKNynVO3HT7IibjfW/view)
 - Video link:  [Video: Thoughts](https://drive.google.com/file/d/1Rg8M0uI_wsASL09xhYZns_hA1pBy_oiv/view)
