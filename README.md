@@ -45,6 +45,13 @@ This is an REST API for a social network that uses a NoSQL database (MongoDB) im
      
      			.env
 
+- Under console, command prompt, or terminal, change to directory where server.js is located. Type or copy the code below
+
+			npm i
+			
+- You can seed users. Type or copy the code below
+
+			npm run seed
 
 ## Usage:  
 - Can be used for any device.
