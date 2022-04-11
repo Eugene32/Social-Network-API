@@ -26,7 +26,7 @@ This is an REST API for a social network that uses a NoSQL database (MongoDB) im
 ## Installation:    
 - Clone or fork the repository.
 
-			`git@github.com:Eugene32/Social-Network-API.git`
+			git@github.com:Eugene32/Social-Network-API.git
 
 - Under console, command prompt, or terminal, change to directory where server.js is located. Type or copy the code below
 
