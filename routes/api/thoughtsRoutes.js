@@ -23,7 +23,7 @@ router
     .delete(deleteOne);
 
 router
-    .route('/:thoughtId/:reactionId')
+    .route('/:thoughtId/:commentId')
     .delete(deleteComment);
 
 

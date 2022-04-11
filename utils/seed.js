@@ -17,37 +17,52 @@ db.once('open', async () => {
     // Drop existing students
     await Thought.deleteMany({});
 
-    // Create empty array to hold the students
-    const users = [];
+
 
     // Get some random assignment objects using a helper function that we imported from ./data
     // const thoughts = getRandomThoughts(5);
 
-    // Loop 20 times -- add students to the students array
-    for (let i = 0; i < 5; i++) {
-        const username = getRandomName();
-        console.log(username);
-        const email = getRandomEmail(username);
-        const thoughts = getRandomThoughts();
+    // const thoughts = [];
 
-        users.push({
-            username,
-            email,
-        });
-    }
+    // for (let i = 0; i < 5; i++) {
 
-    console.log(users);
-    // Add students to the collection and await the results
-    await User.collection.insertMany(users);
+    //     const thought = getRandomThoughts();
 
-    // Add courses to the collection and await the results
-    //   await Thought.collection.insertOne({
-    //     username: [...users],
-    //     thoughts: [...thoughts]
-    //   });
+    //     thoughts.push({
+    //        thought
+    //     });
+    // }
 
-    // Log out the seed data to indicate what should appear in the database
-    console.table(users);
-    console.info('Seeding complete! 🌱');
+    // await Thought.collection.insertMany(thoughts);
+
+    // Create empty array to hold the students
+    // const users = [];
+    // // Loop 20 times -- add students to the students array
+    // for (let i = 0; i < 5; i++) {
+    //     const username = getRandomName();
+    //     console.log(username);
+    //     const email = getRandomEmail(username);
+       
+
+    //     users.push({
+    //         username,
+    //         email,
+    //     });
+    // }
+
+    // console.log(users);
+    // // Add students to the collection and await the results
+    // await User.collection.insertMany(users);
+
+    // // Add courses to the collection and await the results
+    // //   await Thought.collection.insertOne({
+    // //     username: [...users],
+    // //     thoughts: [...thoughts]
+    // //   });
+
+    // // Log out the seed data to indicate what should appear in the database
+    // console.table(users);
+    // //console.table(thoughts);
+    // console.info('Seeding complete! 🌱');
     process.exit(0);
 });
