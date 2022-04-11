@@ -30,20 +30,20 @@ This is an REST API for a social network that uses a NoSQL database (MongoDB) im
 
 - Under console, command prompt, or terminal, change to directory where server.js is located. Type or copy the code below
 
-			`npm i`
+			npm i
 
 - Create .env file on the root directory (where server.js is located).
     - The file must contain the following:
     
-       			`db=mongodb://localhost/social_db`
+       			db=mongodb://localhost/social_db
      
 - Create a .gitignore file (under root directory) and must contain:
 
-     			`node_modules`
+     			node_modules
      
-     			`.DS_Store`
+     			.DS_Store
      
-     			`.env`
+     			.env
 
 
 ## Usage:  
