@@ -5,6 +5,7 @@ module.exports = {
     getUsers(req, res) {
         console.info("Get all users")
         User.find({})
+            .sort({ username: 1 })  // Sort by username in ascending order
             .populate({
                 path: 'thoughts',
                 select: '-__v'
@@ -20,17 +21,17 @@ module.exports = {
             });
     },
     getSingleUser(req, res) {
-        console.info("Retrive one user by id.")
+        
         User.findOne({ _id: req.params.userId })
             .select('-__v')
             .lean()
             .then(async (user) =>
                 !user
                     ? res.status(404).json({ message: 'No user with that ID' })
-                    : res.json({user})
+                    : res.json({ user })
             )
             .catch((err) => {
-                console.log(err);
+               
                 return res.status(500).json({ message: err.message });
             });
     },
