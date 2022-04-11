@@ -18,11 +18,6 @@ db.once('open', async () => {
     await Thought.deleteMany({});
 
 
-
-
-
-
-
     // Create empty array to hold the users
     const users = [];
     //  Loop 5 times -- add students to the students array
