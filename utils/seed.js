@@ -19,44 +19,47 @@ db.once('open', async () => {
 
 
 
-    // Get some random assignment objects using a helper function that we imported from ./data
-    // const thoughts = getRandomThoughts(5);
 
-    // const thoughts = [];
 
-    // for (let i = 0; i < 5; i++) {
 
-    //     const thought = getRandomThoughts();
 
-    //     thoughts.push({
-    //        thought
-    //     });
-    // }
+    // Create empty array to hold the users
+    const users = [];
+    //  Loop 5 times -- add students to the students array
+    for (let i = 0; i < 5; i++) {
+        const username = getRandomName();
 
-    // await Thought.collection.insertMany(thoughts);
+        const email = getRandomEmail(username);
 
-    // Create empty array to hold the students
-    // const users = [];
-    // // Loop 20 times -- add students to the students array
-    // for (let i = 0; i < 5; i++) {
-    //     const username = getRandomName();
-    //     console.log(username);
-    //     const email = getRandomEmail(username);
-       
 
-    //     users.push({
-    //         username,
-    //         email,
-    //     });
-    // }
+        users.push({
+            username,
+            email,
+        });
+    }
 
-    // console.log(users);
-    // // Add students to the collection and await the results
-    // await User.collection.insertMany(users);
+
+    // Add users to the collection and await the results
+    await User.collection.insertMany(users);
+
+
+
+    const thoughts = [];
+
+    for (let i = 0; i < 5; i++) {
+
+        const thought = getRandomThoughts();
+
+        thoughts.push({
+            thought
+        });
+    }
+
+    await Thought.collection.insertMany(thoughts);
 
     // // Add courses to the collection and await the results
     // //   await Thought.collection.insertOne({
-    // //     username: [...users],
+    // //     userId: [...users],
     // //     thoughts: [...thoughts]
     // //   });
 
